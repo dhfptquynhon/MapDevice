@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/MapDevice/static/css/main.44a91c58.css",
+    "main.js": "/MapDevice/static/js/main.d7ade284.js",
+    "static/media/T2Gamma.jpg": "/MapDevice/static/media/T2Gamma.47766a3dbbc08f0422b5.jpg",
+    "static/media/T3Gamma.jpg": "/MapDevice/static/media/T3Gamma.2de051e71ed78f2b68c4.jpg",
+    "static/media/T5Gamma.jpg": "/MapDevice/static/media/T5Gamma.237cce0e77314000f685.jpg",
+    "static/media/T4GammaCSD.jpg": "/MapDevice/static/media/T4GammaCSD.7f84bd3b2b8c26a46a25.jpg",
+    "static/media/T1Gamma.jpg": "/MapDevice/static/media/T1Gamma.050de70e23eb81ab6f4e.jpg",
+    "static/media/KTXDomA.jpg": "/MapDevice/static/media/KTXDomA.a78d79446c33f957afdd.jpg",
+    "static/media/KTXDomB.jpg": "/MapDevice/static/media/KTXDomB.a6cd8e0a788fa9864c8b.jpg",
+    "static/media/T3.png": "/MapDevice/static/media/T3.3ef3fc025076e7d1c076.png",
+    "static/media/Vovinam.jpg": "/MapDevice/static/media/Vovinam.e08bc47dc1931071ef22.jpg",
+    "static/media/t1ncvso7.jpg": "/MapDevice/static/media/t1ncvso7.b56e2a076f0306ffa3b8.jpg",
+    "static/media/T4.jpg": "/MapDevice/static/media/T4.2d7762fc498b24146aee.jpg",
+    "static/media/T5.jpg": "/MapDevice/static/media/T5.5aeda9a0d4b9c991a392.jpg",
+    "static/media/Toancanhtruong.jpg": "/MapDevice/static/media/Toancanhtruong.ea2528ea521e909dbed2.jpg",
+    "static/media/T2.png": "/MapDevice/static/media/T2.6ee1b6f06924db85908a.png",
+    "static/media/T1.jpg": "/MapDevice/static/media/T1.0aef7f9c6402870c6518.jpg",
+    "static/media/T1NCVso5.jpg": "/MapDevice/static/media/T1NCVso5.167433ef5a06f98ec30a.jpg",
+    "static/media/t1ncvso6.jpg": "/MapDevice/static/media/t1ncvso6.cb404f29376f837c01b6.jpg",
+    "static/media/t2ncvso6.jpg": "/MapDevice/static/media/t2ncvso6.99311ab690581c7c6c04.jpg",
+    "static/media/t2ncvso7.jpg": "/MapDevice/static/media/t2ncvso7.99311ab690581c7c6c04.jpg",
+    "static/media/T2NCVso5.jpg": "/MapDevice/static/media/T2NCVso5.00bff225e5f2fb01cdc9.jpg",
+    "index.html": "/MapDevice/index.html",
+    "main.44a91c58.css.map": "/MapDevice/static/css/main.44a91c58.css.map",
+    "main.d7ade284.js.map": "/MapDevice/static/js/main.d7ade284.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44a91c58.css",
+    "static/js/main.d7ade284.js"
+  ]
+}
