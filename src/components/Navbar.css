@@ -1,0 +1,121 @@
+/* Ẩn sidebar trên mobile */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #1e2a38;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+    padding-top: 60px;
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
+  /* Nút mở menu trên Navbar */
+  .menu-button {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Nút đóng Sidebar */
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Ẩn sidebar trên màn hình lớn */
+  @media (min-width: 768px) {
+    .menu-button {
+      display: none;
+    }
+    .sidebar {
+      left: 0;
+      width: 200px;
+      position: relative;
+    }
+  }
+  
+  /* Navbar tổng thể */
+  .navbar {
+      background: linear-gradient(to right, #a8e827, #0044cc, #5fcd0c);
+      color: white;
+      padding: 10px 10px;
+      height: 80px; /* Đảm bảo chiều cao đúng yêu cầu */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      font-family: 'Poppins', sans-serif;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  /* Tiêu đề chính */
+  .title {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+      margin-bottom: 10px;
+  }
+  
+  /* Container cho chữ chạy */
+  .marquee-container {
+      width: 100%;
+      height: 30px; /* Định chiều cao để tránh bị che */
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+  }
+  
+  /* Hiệu ứng chữ chạy */
+  .marquee {
+      position: absolute;
+      white-space: nowrap;
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+      will-change: transform;
+      animation: marqueeAnimation 10s linear infinite;
+  }
+  
+  /* Định nghĩa animation */
+  @keyframes marqueeAnimation {
+      from {
+          transform: translateX(100vw); /* Bắt đầu từ ngoài mép phải */
+      }
+      to {
+          transform: translateX(-100%); /* Chạy đến ngoài mép trái */
+      }
+  }
+
+  @media (max-width: 768px) {
+    .title {
+        font-size: 15px;
+    }
+    .marquee {
+        font-size: 10px;
+    }
+  }
+  

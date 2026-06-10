@@ -1,0 +1,91 @@
+.tang1beta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative; /* Để các marker định vị theo phần tử cha */
+}
+/* Bọc ảnh bản đồ */
+.map-container {
+  position: relative; /* Cho phép icon WiFi định vị theo bản đồ */
+  height: auto;
+}
+
+/* Định dạng ảnh bản đồ */
+.map-image {
+  max-width: 96%;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Marker của WiFi */
+.wifi-marker {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transform: translate(-50%, -100%); /* Đưa icon WiFi lên trên tên */
+  white-space: nowrap; /* Tránh tên WiFi bị xuống dòng */
+}
+
+/* Icon WiFi */
+.wifi-icon {
+  margin-bottom: 5px;
+  color: green;
+  font-size: 18px;
+  
+}
+
+/* Tên WiFi */
+.wifi-name {
+  background-color: white;
+  color: blue;
+  padding: 1px 5px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out; /*Hiệu ứng chuyển động mượt */
+}
+/* Khi hover vào tên Wifi phóng to lên 1.5 lần */
+.wifi-name:hover {
+  transform: scale(1.5);
+}
+.wifi-marker.highlighted {
+    z-index: 100;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.wifi-marker.highlighted .wifi-name {
+    font-weight: bold;
+    color: red;
+}
+
+/* Special styling for Printer List button */
+.sidebar-button.printer-list-button {
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+    font-weight: bold;    
+    transition: all 0.3s ease;
+}
+
+.sidebar-button.printer-list-button:hover {
+    background: linear-gradient(90deg, #2980b9, #27ae60);
+    transform: scale(1.05);
+}
+
+
+/* Đảm bảo layout ổn định trên màn hình nhỏ */
+@media screen and (max-width: 768px) {
+  .map-image {
+      max-width: 100%;
+      max-height: 80vh;
+  }
+}

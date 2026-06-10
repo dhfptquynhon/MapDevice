@@ -1,0 +1,13 @@
+Mở thư đúng thư mục cần up trong cmd phần mềm lập trình và chạy các dòng lệnh sau:
+git init
+git add .
+git commit -m "bt"
+git config --global user.name "tuandtvt88"
+git remote add origin https://github.com/tuandtvt88/FunctionComponentProduct.git
+git push origin master
+
+cập nhật up lên githup:
+git add .
+git commit -m "update17"
+git push -u origin master 
+npm run deploy 
