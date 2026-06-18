@@ -17,7 +17,7 @@ export const wifiLocations = [
         { name: "AP-Tang-3-317-U6P", top: "67%", left: "74%" },
         { name: "AP-Tang-3-318-ACP", top: "69%", left: "88%" },
         { name: "AP-Tang-3-320-U6P", top: "90%", left: "80%" },
-        { name: "AP-Tang-3-322-U6P", top: "90%", left: "11%" },
+        { name: "AP-Tang-3-322-U6", top: "90%", left: "11%" },
         { name: "AP-Tang-3-323-U6P", top: "68%", left: "9%" },
         { name: "AP-Tang-3-324-U6P", top: "70%", left: "22%" },
         { name: "AP-Tang-3-301-U6P", top: "52%", left: "13%" },
