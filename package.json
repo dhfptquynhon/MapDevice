@@ -25,7 +25,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sync-wifi": "node scripts/sync-wifi-data.js",
+    "sync-wifi-unifi": "node scripts/sync-wifi-unifi.js"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +48,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "dotenv": "^17.4.2",
+    "gh-pages": "^6.3.0",
+    "xlsx": "^0.18.5"
   }
 }

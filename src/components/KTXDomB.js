@@ -3,11 +3,12 @@ import "./KTX.css";
 import image from "../assets/KTXDomB.jpg";
 import { Wifi, Trash2 } from "lucide-react";
 import { useLocation } from "react-router-dom";
+import { WifiMarkers } from "./WifiMarkers";
 
 // ✅ Xuất danh sách WiFi để dùng ở các file khác
 export const wifiLocations = [
-    { name: "AP - KTX Dom B-ACP", top: "41.51%", left: "37.52%" },
-    { name: "Ban Xay Dung-ACP", top: "23.90%", left: "13.85%" },
+    { name: "AP -GM- KTX Dom B-ACP", top: "41.51%", left: "37.52%", ch24: 11, ch5: 40 },
+    { name: "AP-GM-Ban Xay Dung-ACP", top: "23.90%", left: "13.85%", ch24: 6, ch5: 161 },
 ];
 
 export function KTXDomB() {
@@ -26,31 +27,7 @@ export function KTXDomB() {
         <div className="ktx">
             <div className="map-container-ktx">
                 <img src={image} alt="Tang 1 Beta" className="map-image-ktx" />
-                {wifiLocations.map((wifi, index) => (
-                    <div
-                        key={index}
-                        className="wifi-marker-ktx"
-                        style={{ top: wifi.top, left: wifi.left,
-                        animation: highlightedWifi === wifi.name ? 'pulse 0.5s infinite' : 'none'
-                         }}
-                        data-name={wifi.name}
-                    >
-                        <Wifi
-                            className="wifi-icon"
-                            size={28}
-                            color={highlightedWifi === wifi.name ? "red" : "green"}
-                        />
-                        <div
-                            className="wifi-name"
-                            style={{
-                                color: highlightedWifi === wifi.name ? "red" : "blue",
-                                fontWeight: highlightedWifi === wifi.name ? "bold" : "bold",
-                            }}
-                        >
-                            {wifi.name}
-                        </div>
-                    </div>
-                ))}
+                <WifiMarkers wifiLocations={wifiLocations} highlightedWifi={highlightedWifi} variant="ktx" />
             </div>
         </div>
     );

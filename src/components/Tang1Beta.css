@@ -69,6 +69,38 @@
     color: red;
 }
 
+/* Nhãn kênh 2.4G / 5G hiển thị dưới tên WiFi, dạng "2.4G|5G" */
+.wifi-channels {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-top: 2px;
+  background-color: white;
+  padding: 1px 6px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.channel-num {
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.channel-num.channel-24 {
+  color: green;
+}
+
+.channel-num.channel-5 {
+  color: red;
+}
+
+.channel-sep {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+}
+
 /* Special styling for Printer List button */
 .sidebar-button.printer-list-button {
     background: linear-gradient(90deg, #3498db, #2ecc71);

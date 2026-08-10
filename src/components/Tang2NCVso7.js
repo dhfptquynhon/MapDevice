@@ -3,10 +3,11 @@ import "./NhaCongVu.css";
 import image from "../assets/t2ncvso7.jpg";
 import { Wifi, Trash2 } from "lucide-react";
 import { useLocation } from "react-router-dom";
+import { WifiMarkers } from "./WifiMarkers";
 
 // ✅ Xuất danh sách WiFi để dùng ở các file khác
 export const wifiLocations = [
-    { name: "AP-NCV-7-T2-ACP", top: "56.02%", left: "42.26%" },
+    { name: "AP-NCV 7-T2-ACP", top: "56.02%", left: "42.26%", ch24: 6, ch5: 149 },
 ];
 
 export function Tang2NCVso7() {
@@ -25,31 +26,7 @@ export function Tang2NCVso7() {
         <div className="nhacongvu">
             <div className="map-container">
                 <img src={image} alt="Tang 1 Beta" className="map-image" />
-                {wifiLocations.map((wifi, index) => (
-                    <div
-                        key={index}
-                        className="wifi-marker"
-                        style={{ top: wifi.top, left: wifi.left ,
-                        animation: highlightedWifi === wifi.name ? 'pulse 0.5s infinite' : 'none'
-                        }}
-                        data-name={wifi.name}
-                    >
-                        <Wifi
-                            className="wifi-icon"
-                            size={28}
-                            color={highlightedWifi === wifi.name ? "red" : "green"}
-                        />
-                        <div
-                            className="wifi-name"
-                            style={{
-                                color: highlightedWifi === wifi.name ? "red" : "blue",
-                                fontWeight: highlightedWifi === wifi.name ? "bold" : "bold",
-                            }}
-                        >
-                            {wifi.name}
-                        </div>
-                    </div>
-                ))}
+                <WifiMarkers wifiLocations={wifiLocations} highlightedWifi={highlightedWifi} />
             </div>
         </div>
     );

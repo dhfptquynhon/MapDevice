@@ -3,10 +3,11 @@ import "./Tang1Beta.css";
 import image from "../assets/T5Gamma.jpg";
 import { Wifi } from "lucide-react"; // Import icon Wi-Fi
 import { useLocation } from "react-router-dom";
+import { WifiMarkers } from "./WifiMarkers";
 
 // ✅ Xuất danh sách WiFi để dùng ở các file khác
 export const wifiLocations = [
-    { name: "AP-GM-Tang-5-BXD-U6P", top: "91%", left: "58%"  },
+    { name: "AP-GM-Tang-5-BXD-U6P", top: "91%", left: "58%", ch24: 1, ch5: 157 },
 ];
 
 export function Tang5Gamma() {
@@ -25,31 +26,7 @@ export function Tang5Gamma() {
         <div className="tang1beta">
             <div className="map-container">
                 <img src={image} alt="Tang 1 Beta" className="map-image" />
-                {wifiLocations.map((wifi, index) => (
-                    <div
-                        key={index}
-                        className="wifi-marker"
-                        style={{ top: wifi.top, left: wifi.left ,
-                        animation: highlightedWifi === wifi.name ? 'pulse 0.5s infinite' : 'none'
-                        }}
-                        data-name={wifi.name}
-                    >
-                        <Wifi
-                            className="wifi-icon"
-                            size={28}
-                            color={highlightedWifi === wifi.name ? "red" : "green"}
-                        />
-                        <div
-                            className="wifi-name"
-                            style={{
-                                color: highlightedWifi === wifi.name ? "red" : "blue",
-                                fontWeight: highlightedWifi === wifi.name ? "bold" : "bold",
-                            }}
-                        >
-                            {wifi.name}
-                        </div>
-                    </div>
-                ))}
+                <WifiMarkers wifiLocations={wifiLocations} highlightedWifi={highlightedWifi} />
             </div>
         </div>
     );
