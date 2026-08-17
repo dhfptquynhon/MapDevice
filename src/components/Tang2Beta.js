@@ -23,7 +23,7 @@ export const wifiLocations = [
     { name: "AP-BT-Tang-2-201-U6P", top: "68%", left: "11%", ch24: 6, ch5: 40 },
     { name: "AP-BT-Tang-2-201-2-U6P", top: "66%", left: "22%", ch24: 1, ch5: 36 },
     { name: "AP-BT-Tang-2-202-U6P", top: "52%", left: "13%", ch24: 11, ch5: 44 },
-    { name: "AP-BT-Tang-2-204-U6P", top: "36%", left: "08%", ch24: 6, ch5: 149 },
+    { name: "AP-BT-Tang-2-204-U6P", top: "36%", left: "08%", ch24: 6, ch5: 36 },
     { name: "AP-BT-Tang-2-203-U6P", top: "39%", left: "20%", ch24: 1, ch5: 48 },
 ];
 
