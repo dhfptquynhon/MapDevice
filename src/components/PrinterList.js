@@ -7,7 +7,7 @@ import { allWifiLocations } from './wifiData';
 const printersData = [
   // Đại Học
   { id: 1, name: "CANON MF465DW", department: "HÀNH CHÁNH 1", ip: "172.16.0.254", mac: "20:0B:74:AA:CC:0F", type: 'university' },
-  { id: 2, name: "CANON MF244DW", department: "HÀNH CHÁNH 2", ip: "172.16.0.90", mac: "EC:2E:98:A7:FC:42", type: 'university' },
+  { id: 2, name: "CANON MF244DW", department: "KTX DORM A", ip: "172.16.0.5", mac: "EC:2E:98:A7:FC:42", type: 'university' },
   { id: 3, name: "CANON MF244DW", department: "TUYỂN SINH T5", ip: "172.16.0.69", mac: "20:4E:F6:0A:53:75", type: 'university' },
   { id: 4, name: "CANON MF244DW", department: "TUYỂN SINH T1", ip: "172.16.0.98", mac: "20:4E:F6:5F:9C:2D", type: 'university' },
   { id: 5, name: "CANON MF244DW", department: "ĐÀO TẠO", ip: "172.16.0.54", mac: "20:4E:F6:0A:35:B7", type: 'university' },
@@ -54,7 +54,7 @@ const PrinterList = () => {
   // WiFi connections cho tất cả phòng ban
   const wifiConnections = {
     "HÀNH CHÁNH 1": "AP-BT-FU-U6P",
-    "HÀNH CHÁNH 2": "AP-BT-FU-U6P",
+    "KTX DORM A": "U7 Lite-Sảnh",
     "TUYỂN SINH T5": "AP-BT-TuyenSinh-U6P",
     "TUYỂN SINH T1": "AP-BT-TuyenSinh-U6P",
     "ĐÀO TẠO": "AP-Tang-4-401-U6",
