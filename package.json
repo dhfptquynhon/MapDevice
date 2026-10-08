@@ -27,7 +27,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sync-wifi": "node scripts/sync-wifi-data.js",
-    "sync-wifi-unifi": "node scripts/sync-wifi-unifi.js"
+    "sync-wifi-unifi": "node scripts/sync-wifi-unifi.js",
+    "sync-wifi-to-unifi": "node scripts/sync-wifi-to-unifi.js"
   },
   "eslintConfig": {
     "extends": [
